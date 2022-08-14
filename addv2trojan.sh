@@ -17,7 +17,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 # // Getting
 MYIP=$(wget -qO- ifconfig.me/ip); 
 echo "Checking VPS" 
-IZIN=$(curl -sS https://raw.githubusercontent.com/Manpokr/mon/main/ip | awk '{print $4}' | grep $MYIP ) 
+IZIN=$(curl -sS https://raw.githubusercontent.com/ketum9/s/main/ip | awk '{print $4}' | grep $MYIP ) 
 if [[ $MYIP = $IZIN ]]; then 
 echo -e "${GREEN}Permission Accepted...${NC}" 
 else 
